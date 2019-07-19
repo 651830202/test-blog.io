@@ -32,7 +32,7 @@ toggle = () => {
 render(){
   const RightContent = () => {
     return (
-        <div>
+        <div className="list" style={{background: '#fff'}}>
         <Content>       
             <Route path="/home/index" component={Page1} />
             <Route path="/about/index" component={Page2} />
@@ -95,11 +95,11 @@ return(
             <Breadcrumb style={{ margin: '12px 0' }}>
                 <RightContent></RightContent>
             </Breadcrumb>
-            <div style={{ padding: 24, background: '#fff', minHeight: 780 }}>
+            <div className="list"  style={{ padding: 24, background: '#fff', minHeight: 780 }}>
             <img src="http://img.schoolgater.com/avatar/f4cef56e-d858-4732-aa69-2286012692a4.jpg" style={{width:'400px',height:'400px',marginTop:'200px',marginLeft:'300px' }} alt="logo" />
             </div>
         </Content>
-        <Carousel>
+        <Carousel className="list">
             <div><h3 style={{backgroundColor:'#FFDAB9',textAlign:'center',lineHeight:'40px'}}><Icon type="android" /></h3></div>
             <div><h3 style={{backgroundColor:'#FFDAB9',textAlign:'center',lineHeight:'40px'}}><Icon type="android-o" /></h3></div>
             <div><h3 style={{backgroundColor:'#FFDAB9',textAlign:'center',lineHeight:'40px'}}><Icon type="apple" /></h3></div>
